@@ -1,0 +1,38 @@
+export const products = [
+  {
+    id: "1",
+    title: "Remera Exodo Academy",
+    price: 29.99,
+    category: "remeras",
+    description: "Remera dry-fit entrenamiento",
+    image: "/public/img/remeranegra.png",
+    stock: 10,
+  },
+  {
+    id: "2",
+    title: "Pantalón Training",
+    price: 49.99,
+    category: "pantalones",
+    description: "Pantalón técnico slim",
+    image: "/public/img/pantalon.png",
+    stock: 10,
+  },
+  {
+    id: "3",
+    title: "Zapatillas Pro",
+    price: 89.99,
+    category: "zapatillas",
+    description: "Zapatillas livianas para running",
+    image: "/public/img/zapatillas.png",
+    stock: 10,
+  },
+  {
+    id: "4",
+    title: "Remera Pro",
+    price: 34.99,
+    category: "remeras",
+    description: "Remera de algodón premium especial para entrenamiento",
+    image: "/public/img/remerablanca.png",
+    stock: 10,
+  },
+];

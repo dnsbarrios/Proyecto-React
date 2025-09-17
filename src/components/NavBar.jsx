@@ -1,18 +1,29 @@
+import { Link, NavLink } from "react-router-dom";
 import CartWidget from "./CartWidget";
+
+const setActive = ({ isActive }) => (isActive ? "active" : undefined);
 
 export default function NavBar() {
   return (
     <header className="nav">
       <div className="nav__content">
-        <a href="/" className="nav__logo">
-          Exodo Center
-        </a>
+        <Link to="/" className="nav__logo">
+          EXODO CENTER
+        </Link>
 
         <nav className="nav__links">
-          <a href="#">Inicio</a>
-          <a href="#">Categorías</a>
-          <a href="#">Ofertas</a>
-          <a href="#">Contacto</a>
+          <NavLink to="/" className={setActive}>
+            Inicio
+          </NavLink>
+          <NavLink to="/category/remeras" className={setActive}>
+            Remeras
+          </NavLink>
+          <NavLink to="/category/pantalones" className={setActive}>
+            Pantalones
+          </NavLink>
+          <NavLink to="/category/zapatillas" className={setActive}>
+            Zapatillas
+          </NavLink>
         </nav>
 
         <CartWidget count={0} />
